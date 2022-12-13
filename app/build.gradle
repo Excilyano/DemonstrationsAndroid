@@ -7,6 +7,10 @@ android {
     namespace 'com.example.demonstrationsandroid'
     compileSdk 32
 
+    dataBinding {
+        enabled true
+    }
+
     defaultConfig {
         applicationId "com.example.demonstrationsandroid"
         minSdk 21
