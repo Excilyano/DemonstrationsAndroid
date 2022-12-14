@@ -20,6 +20,12 @@ class DestinationFragment : Fragment() {
             R.layout.fragment_destination,
             container,
             false)
+
+        val args = arguments?.let {DestinationFragmentArgs.fromBundle(it)}
+
+        binding.msg = args?.message
+        binding.user = args?.myuser
+
         return binding.root
     }
 }

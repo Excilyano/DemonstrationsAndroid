@@ -23,9 +23,24 @@ class SourceFragment : Fragment() {
             container,
             false)
 
-        binding.btnNavigation.setOnClickListener(
-            Navigation.createNavigateOnClickListener(R.id.action_sourceFragment_to_destinationFragment)
-        )
+        /*
+         * Cette syntaxe ne permet pas l'utilisation de if
+         */
+//        binding.btnNavigation.setOnClickListener(
+//            Navigation.createNavigateOnClickListener(R.id.action_sourceFragment_to_destinationFragment)
+//        )
+
+        /*
+         * Cette syntaxe permet d'utiliser des if --> plus adaptee au TP
+         */
+        binding.btnNavigation.setOnClickListener{
+            val saisie = binding.etMessage.text.toString()
+            val action = SourceFragmentDirections.actionSourceFragmentToDestinationFragment(saisie, null)
+
+            action.myuser = Utilisateur(1, "CASSIN", "Etienne")
+
+            Navigation.findNavController(it).navigate(action)
+        }
 
         return binding.root
     }

@@ -10,10 +10,19 @@
         android:label="SourceFragment" >
         <action
             android:id="@+id/action_sourceFragment_to_destinationFragment"
-            app:destination="@id/destinationFragment" />
+            app:destination="@id/destinationFragment"
+            app:popUpTo="@id/sourceFragment" />
     </fragment>
     <fragment
         android:id="@+id/destinationFragment"
         android:name="com.example.demonstrationsandroid.fragments.DestinationFragment"
-        android:label="DestinationFragment" />
+        android:label="DestinationFragment" >
+        <argument
+            android:name="message"
+            app:argType="string" />
+        <argument
+            android:name="myuser"
+            app:argType="com.example.demonstrationsandroid.findview.Utilisateur"
+            app:nullable="true" />
+    </fragment>
 </navigation>
