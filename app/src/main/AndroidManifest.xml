@@ -15,24 +15,32 @@
         android:theme="@style/Theme.DemonstrationsAndroid"
         tools:targetApi="31">
         <activity
-            android:name=".intentimplicite.LecteurpdfActivity"
-            android:exported="true">
-
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW"/>
-                <data android:mimeType="application/pdf" />
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".intentimplicite.DemoIntentImpliciteActivity"
+            android:name=".cycledevie.DemoCycleDeVieFragmentActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".cycledevie.DemoCycleDeVieActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".intentimplicite.LecteurpdfActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
 
+                <data android:mimeType="application/pdf" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".intentimplicite.DemoIntentImpliciteActivity"
+            android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -55,9 +63,11 @@
             android:name=".fragments.DemoFragmentsActivity"
             android:exported="true">
             <intent-filter>
-                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.VIEW" />
+
                 <data android:mimeType="application/pdf" />
-                <category android:name="android.intent.category.DEFAULT"/>
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity

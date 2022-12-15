@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_cycle_de_vie"
+    app:startDestination="@id/cycleDeVieFragmentFragment">
+
+    <fragment
+        android:id="@+id/cycleDeVieFragmentFragment"
+        android:name="com.example.demonstrationsandroid.cycledevie.CycleDeVieFragmentFragment"
+        android:label="fragment_cycle_de_vie_fragment"
+        tools:layout="@layout/fragment_cycle_de_vie_fragment" />
+</navigation>
