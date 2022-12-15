@@ -11,6 +11,7 @@
         <action
             android:id="@+id/action_sourceFragment_to_destinationFragment"
             app:destination="@id/destinationFragment"
+            app:enterAnim="@anim/transition_fragment"
             app:popUpTo="@id/sourceFragment" />
     </fragment>
     <fragment
